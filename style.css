@@ -158,7 +158,6 @@ h1 {
 }
 
 /*   ---------------------------------------------------    */
-
 header,
 .logo,
 nav,
@@ -170,9 +169,12 @@ a,
 }
 
 .container {
+  box-sizing: border-box;
   min-width: 100%;
   height: 100vh;
   overflow: hidden;
+  background-color: #bfbcd1;
+  border-top: none;
 }
 
 header {
@@ -180,6 +182,9 @@ header {
   height: 10%;
   background-color: #272247;
   justify-content: space-around;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
 }
 
 nav a {
@@ -188,4 +193,21 @@ nav a {
   margin: auto 0;
   padding-left: 20px;
   color: grey;
+}
+
+#about {
+  display: block;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  padding: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100%;
+}
+
+img {
+  height: 100%;
 }
