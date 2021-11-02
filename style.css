@@ -275,3 +275,38 @@ h2 {
 .card p {
   color: #000;
 }
+
+#contacts main {
+  text-align: right;
+}
+
+#contacts form {
+  text-align: center;
+  display: block;
+  width: 40%;
+  margin: 15px auto;
+}
+
+#contacts p {
+  text-align: center;
+}
+
+#contacts input,
+#contacts textarea {
+  width: 100%;
+  margin-bottom: 5px;
+  background-color: #423b6b;
+  border: 1px solid #bfbcd1;
+  box-shadow: 0 0 5px black;
+  /* 272247 */
+}
+
+
+/* Стилизация placeholder */
+
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
+
+/* ---------------------------------------------------- /*
