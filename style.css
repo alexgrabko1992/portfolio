@@ -131,7 +131,6 @@
 
 html,
 body {
-  height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -161,9 +160,9 @@ h1 {
 header,
 .logo,
 nav,
-ul,
-li,
-a,
+header ul,
+header li,
+header a,
 .container {
   display: flex;
 }
@@ -174,17 +173,20 @@ a,
   height: 100vh;
   overflow: hidden;
   background-color: #bfbcd1;
-  border-top: none;
+  border-bottom: 10px solid #272247;
+  font-family: sans-serif;
+  padding: 20px;
 }
 
 header {
   width: 100%;
-  height: 10%;
+  height: 60px;
   background-color: #272247;
   justify-content: space-around;
   position: -webkit-sticky;
   position: sticky;
-  top: 20px;
+  top: 0;
+  z-index: 10;
 }
 
 nav a {
@@ -195,6 +197,11 @@ nav a {
   color: grey;
 }
 
+#home {
+  border: none;
+  padding: 0;
+}
+
 #about {
   display: block;
 }
@@ -202,12 +209,69 @@ nav a {
 main {
   width: 100%;
   height: 100%;
-  display: grid;
-  padding: 20px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 100%;
+  padding-top: 40px;
+  box-sizing: border-box;
 }
 
-img {
+#about main {
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 100%;
+  display: grid;
+}
+
+.description img {
   height: 100%;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+.description {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100%;
+  text-align: center;
+  padding-right: 50px;
+}
+
+.description p {
+  align-self: center;
+}
+
+.description img {
+  justify-self: center;
+}
+
+#portfolio main {
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  box-sizing: border-box;
+  height: 70%;
+  width: 80%;
+  margin: 10px auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.card {
+  padding: 0 20px;
+  text-align: center;
+}
+
+.card img {
+  width: 80%;
+  display: block;
+  margin: 0 auto 5px auto;
+}
+
+.cards a {
+  text-decoration: none;
+}
+
+.card p {
+  color: #000;
 }
