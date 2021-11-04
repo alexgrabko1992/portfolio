@@ -138,6 +138,7 @@ body {
 }
 canvas {
   border: 1px soild black;
+  width: 100%;
 }
 h1 {
   display: inline-block;
@@ -154,6 +155,19 @@ h1 {
   transform: scale(3);
   color: rgba(255, 255, 255, 0.68);
   border: 0.075em solid rgba(255, 255, 255, 0.1);
+}
+
+
+
+@media only screen and (max-width: 640px) {
+  canvas {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #home h1 {
+    left: 40%;
+  }
 }
 
 /*   ---------------------------------------------------    */
@@ -201,6 +215,72 @@ nav a {
   border: none;
   padding: 0;
 }
+/* Delete header */
+
+@media only screen and (max-width: 640px) {
+  * {
+    padding: 0;
+    display: block;
+  }
+  header {
+    display: none;
+  }
+  title, 
+  script {
+    display: none;
+  }
+  #about main {
+    padding: 0%;
+    display: block !important;
+  }
+  #about .description {
+    display: block;
+    padding: 0 !important;
+  }
+  .container {
+    border: none;
+    height: auto;
+    padding: 0;
+    text-align: center;
+  }
+  .container img {
+    width: 100%;
+  }
+  .container main {
+    padding: 0%;
+    grid-template-columns: 1fr;
+  }
+  .cards,
+  .card {
+    padding: 0%;
+  }
+  h2,
+  p {
+    margin: 50px;
+  }
+  p {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .cards {
+    display: block !important;
+  }
+  h2 {
+    text-align: center;
+  }
+  .card {
+    padding: 0% !important;
+    width: 100%;
+  }
+  input,
+  #message {
+    width: 100% !important;
+  }
+  form {
+    width: 80% !important;
+  }
+}
+
 
 #about {
   display: block;
@@ -219,12 +299,15 @@ main {
   display: grid;
 }
 
+
+
 .description img {
   height: 100%;
 }
 
 h2 {
   font-size: 4rem;
+  
 }
 
 .description {
