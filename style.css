@@ -157,8 +157,6 @@ h1 {
   border: 0.075em solid rgba(255, 255, 255, 0.1);
 }
 
-
-
 @media only screen and (max-width: 640px) {
   canvas {
     width: 100vw;
@@ -203,12 +201,24 @@ header {
   z-index: 10;
 }
 
+nav li {
+  text-align: center;
+}
+
 nav a {
   text-decoration: none;
   text-transform: uppercase;
   margin: auto 0;
-  padding-left: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   color: grey;
+}
+
+nav a:hover {
+  background-color: #4e477a;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 #home {
@@ -225,7 +235,7 @@ nav a {
   header {
     display: none;
   }
-  title, 
+  title,
   script {
     display: none;
   }
@@ -281,7 +291,6 @@ nav a {
   }
 }
 
-
 #about {
   display: block;
 }
@@ -299,15 +308,12 @@ main {
   display: grid;
 }
 
-
-
 .description img {
   height: 100%;
 }
 
 h2 {
   font-size: 4rem;
-  
 }
 
 .description {
@@ -384,12 +390,36 @@ h2 {
   /* 272247 */
 }
 
-
 /* Стилизация placeholder */
 
-:focus::-webkit-input-placeholder {color: transparent}
-:focus::-moz-placeholder          {color: transparent}
-:focus:-moz-placeholder           {color: transparent}
-:focus:-ms-input-placeholder      {color: transparent}
+:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+:focus::-moz-placeholder {
+  color: transparent;
+}
+:focus:-moz-placeholder {
+  color: transparent;
+}
+:focus:-ms-input-placeholder {
+  color: transparent;
+}
 
-/* ---------------------------------------------------- /*
+/* ---------------------------------------------------- */
+
+i {
+  font-size: 50px;
+  margin: 0 10px;
+  color: #551a8b;
+}
+
+.social {
+  align-self: flex-end;
+  margin-top: 10%;
+}
+i:hover {
+  border-radius: 50%;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}

@@ -129,11 +129,16 @@
         <h2>Contacts</h2>
         <div class="contacts">
           <p>Have a question or want to work together?</p>
-          <form action="get">
+          <form action="form_page.html" method="get">
             <label for="name"></label>
             <input type="text" placeholder="Enter your name" /><br />
-            <label for="email"></label>
-            <input type="text" placeholder="Enter your email" /><br />
+            <label for="mail"></label>
+            <input
+              type="email"
+              id="mail"
+              name="mail"
+              placeholder="Enter your email"
+            /><br />
             <label for="message"></label>
             <textarea
               name="message"
@@ -142,7 +147,35 @@
               rows="10"
               placeholder="Enter your message"
             ></textarea>
+            <button type="submit">Send</button>
           </form>
+          <script
+            src="https://kit.fontawesome.com/5df0124305.js"
+            crossorigin="anonymous"
+          ></script>
+          <div class="social">
+            <a
+              href="gmailto:alexgrabko1992@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="far fa-envelope"></i
+            ></a>
+            <a
+              href="https://vk.com/id27808486"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-vk"></i
+            ></a>
+            <a href="tel:+79643320076" target="_blank" rel="noopener noreferrer"
+              ><i class="fas fa-phone-alt"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100010341494545"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-facebook-square"></i
+            ></a>
+          </div>
         </div>
       </main>
     </div>
